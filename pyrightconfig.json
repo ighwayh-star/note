@@ -1,0 +1,10 @@
+{
+  "venvPath": "api",
+  "venv": ".venv",
+  "extraPaths": ["api"],
+  "executionEnvironments": [
+    {
+      "root": "api"
+    }
+  ]
+}
