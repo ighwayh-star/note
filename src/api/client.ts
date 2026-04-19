@@ -12,7 +12,7 @@ import type {
   UserOut,
 } from '@/api/types'
 
-const API_BASE = 'http://127.0.0.1:8000'
+const API_BASE = (import.meta as any).env?.VITE_API_BASE || 'http://127.0.0.1:8000'
 
 function authHeader(): Record<string, string> {
   const token = localStorage.getItem('access_token')
