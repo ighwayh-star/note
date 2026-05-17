@@ -12,6 +12,7 @@ import type {
   UserOut,
 } from '@/api/types'
 
+// 本地开发默认指向 localhost；GitHub Pages 部署时通过 Actions variable VITE_API_BASE 指定 Railway 后端地址
 const API_BASE = (import.meta as any).env?.VITE_API_BASE || 'http://127.0.0.1:8000'
 
 function authHeader(): Record<string, string> {
